@@ -1,0 +1,193 @@
+/*login.css*/
+
+body{
+	font-family: "Perpetua";
+     font-size:20pt;
+     background-color: #f6eaf1;
+     text-align: center;
+     height: 100%;
+     margin-top: 0px;
+}
+
+
+table,tr, td{
+  align-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+#loginForm{
+  position: absolute;
+  left: 35%;
+  top: 15%;
+  width: 30%;
+  height: 20%;
+  text-align: center;
+  font-size: 15pt;
+}
+
+#regLink{
+  position: absolute;
+  top: 25%;
+  width: 30%;
+  height: 5%;
+  left: 35%;
+  font-size: 15pt;
+}
+
+h2{
+  top: 10%;
+  font-size: 30pt;
+}
+
+.label{
+  width: auto;
+}
+
+tbody{
+  position: inherit;
+  left: 25%;
+}
+
+input[type="text"], input[type="password"]{
+  background-color: #d8ebfe;
+  border-radius: 10px;
+  height: 20px;
+  width: 200px;
+font-family: "Perpetua";
+    /*font-size:70px;*/
+     font-size:12pt;
+
+}
+
+#username span{
+  left: 65%;
+
+}
+
+.label{
+  text-align: right;
+}
+
+#loginImg{
+  position: absolute;
+  top: 40%;
+  left: 0px;
+  height: 50%;
+  width:100%;
+}
+
+#loginBtn{
+  width: 20%;
+  height: 10%;
+  top: 10px;
+  border-color: black;
+  background-color: #d8ebfe;
+  font-family: "Perpetua";
+     font-size:12pt;
+  text-align: center;
+  border-radius: 100px/70px;
+  position: relative;
+  margin: auto;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.login_footer, .login_footer table{
+  z-index: s;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    top: 130%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-size: 12pt;
+    height: 15%;
+  }
+
+.photo {
+    width:120px;
+     border-radius: 50%;
+ }
+
+#line1{
+    padding:0px;
+    font-size:30px;
+}
+
+.insidePage .dropbtn, .insidePage .regLink{
+  color: white;
+}
+
+.navbar {
+    overflow: hidden;
+    font-family: Arial;
+    margin-top: 0px;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: pink;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+

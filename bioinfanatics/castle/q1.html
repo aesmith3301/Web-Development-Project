@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="./reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="./demo.css"> <!-- Demo style -->
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+main{ 
+	position: absolute;
+	height:100%;
+	width:100%;
+    background: url("https://magazine.artstation.com/wp-content/uploads/2019/01/raphael-lacoste-castle-mood-1.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+  }
+
+.question{
+	font-size:28px;
+	color:black;
+}
+#button{
+	padding-left:15em;
+}
+#button2{
+	padding-left:15em;
+}
+#next{
+	font-size:14px;
+}
+</style>
+<link rel="stylesheet" href="./style.css"> <!-- Resource style -->
+	
+	<title>The castle</title>
+</head>
+<body>
+	<main class="cd-main-content">
+		<h1>The Castle</h1>
+		<div class="question">
+		<div>You are in front of the door of the castle. How exactly do you imagine it?</div>
+		<br>
+		<form id ="calForm" method="post">
+		<input type="radio" name="one" value="a">It is a simple door<br>
+		<input type="radio" name="one" value="b">It is covered by plants and is somewhat hard to find<br>
+		<input type="radio" name="one" value="c">It is a huge wooden door with metal details and it looks a little frightening<br>
+		<br>
+		<br>
+		<br>
+		<div id="button"><input type="submit" name="submit" class="cd-btn js-cd-panel-trigger" data-panel="main"></div>
+		<br>
+		<div id="button2"><a class="cd-btn" id="next" href="https://fall-2019.cs.utexas.edu/cs329e-mitra/bioinfanatics/castle/q2.html">Next</a></div>
+		</form>
+		</div>
+
+	</main>
+
+	<div class="cd-panel cd-panel--from-right js-cd-panel-main">
+		<header class="cd-panel__header">
+			<h1>What it tells you</h1>
+			<a href="#0" class="cd-panel__close js-cd-close">Close</a>
+		</header>
+
+		<div class="cd-panel__container">
+			<div class="cd-panel__content">
+				<p id="interp">Choose an anser</p>
+			</div> <!-- cd-panel__content -->
+		</div> <!-- cd-panel__container -->
+	</div> <!-- cd-panel -->
+	<script src="./main.js"></script> <!-- Resource JavaScript -->
+	<script type = "text/javascript">
+	document.getElementById("calForm").submit.onclick = answer;
+	function answer(){
+		let a1=document.getElementById("calForm")
+		if(a1[0].checked){
+			document.getElementById("interp").innerHTML="The door represents your attitude to new experiences. You imagined a simple, everyday door, you probably are not afraid of any new challenge and will test your luck in new things and situations without a second thought."
+        }
+        else if (a1[1].checked){
+			document.getElementById("interp").innerHTML="The door represents your attitude to new experiences. You have chosen the hidden door, you probably do not know what you need to do in the future and your life in it, and it looks blurry and undefined."
+        }
+        else if(a1[2].checked){
+			document.getElementById("interp").innerHTML="The door represents your attitude to new experiences. You have chosen a big, scary door, then you probably are afraid of the unknown and find it difficult to get out of your comfort zone and try new experiences."
+        }
+	}
+	</script>
+</body>
+</html>

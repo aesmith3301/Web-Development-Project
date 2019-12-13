@@ -1,0 +1,34 @@
+1. Home page:
+
+1)Tile
+2)Logo
+3)Brief description of what the website is about
+4)Navigation bar
+5)Contact US page  people + contact information
+      --> Show some sort of credibility 
+6)Date and signature
+
+
+2. Interior pages
+
+1)Title
+2)Logo - a link to the home page 
+3)The content (in short paragraphs and/or bulleted sentences)
+4)navigation bar
+5)at least 2 JavaScript applications
+(form validation + DHTML application)
+6)PHP script to process form data
+7)MySQL database back end
+8)PHP interface to the MySQL database
+9)Maintain state in transactions
+10)set and read cookies
+11)Annotated links to other related web sites
+12)Links to audio and/or video files
+13)Application of AJAX
+
+3. server side programming
+
+1)form processing using PHP
+2)set and read cookies using PHP
+3)maintain state in transactions using PHP
+

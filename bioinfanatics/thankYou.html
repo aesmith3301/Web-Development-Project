@@ -1,0 +1,64 @@
+<html>
+<head>
+<link rel="stylesheet" title="basic style" type="text/css"
+        href="./theForest/forest.css"/>
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script> 
+        <script src="save.js"></script>
+<title>
+End of Quiz
+</title>
+</head>
+<body class="insidePage">
+<div class="navbar">
+                        <a class="regLink" href="./home.php">Home</a>
+                        <a class="regLink" href="./aboutPage.html">About</a>
+                        <div class="dropdown">
+                                <button class="dropbtn">Theme
+                                        <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                        <a href="./castle/q1.html">Castle</a>
+                                        <a href="./theForest/forest.html">Forest</a>
+                                </div>
+                        </div>
+                        <a class="regLink" href="#news">Contact</a></div>
+<h2 id="thanks_forest">Thank you for taking our quiz!</h2>
+<div id="finishedPage">
+<p>Now that you've learned a little bit about yourself, what would you like to do?
+</p>
+<table id="choices_after_forest">
+    <th><button id="save_btn" class="thanks_btn" name="save">Save my Results</button></th>
+    <form method="post" action="./options.php">
+    <th><input type="submit" class="thanks_btn" name="castle" value="Take the Castle Assessment"/></th>
+    <th><input type="submit" class="thanks_btn" name="about" value="See what it's all about"/></th>
+    </form>
+</table>
+<div id="logos"><img id="logo1" src="./logo2.png" width="110px" height="100px" onclick="goHome();"></p>
+        <p><img id="logo2" src="./triangle2.png" width="120px" height="110px" onclick="goHome();"></div>
+</div>
+      <div class="endOfQuiz_footer">
+                <table>
+                        <tr>
+                                <th><img class="photo" src="http://m.imeitou.com/uploads/allimg/2019051311/1om1yvumecq.jpg" alt="Avatar"></th>
+                                <th id="line1">Get to Know Us</th>
+                                <th><img class="photo" src="https://n.sinaimg.cn/sinacn20190515s/560/w1080h1080/20190515/485b-hwzkfpu2779553.jpg" alt="Avatar"></th>
+                        </tr>
+                        <tr>
+                                <th>Yangbing Fang</th>
+                                <th id="line2">We are UT students who are interested in psychology</th>
+                                <th>Alexandra Smith</th>
+                        </tr>
+                        <tr>
+                                <th>yanbingfang@utexas.edu</th>
+                                <th></th>
+                                <th>alexsmith9672@utexas.edu</th>
+                        </tr>
+                </table>
+</div>
+<script>
+    function goHome(){
+        window.location.href = "./home.php";
+    }
+</script>
+</body>
+</html>

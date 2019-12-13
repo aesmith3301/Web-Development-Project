@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="./reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="./demo.css"> <!-- Demo style -->
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+main{ 
+	position: absolute;
+	height:100%;
+	width:100%;
+    background: url("https://cdna.artstation.com/p/assets/images/images/013/056/510/large/michael-morris-crypt.jpg?1537865884") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    color:white;
+  }
+
+.question{
+	font-size:28px;
+	color:white;
+}
+#button{
+	padding-left:15em;
+}
+#button2{
+	padding-left:15em;
+}
+#next{
+	font-size:14px;
+}
+</style>
+<link rel="stylesheet" href="./style.css"> <!-- Resource style -->
+	
+	<title>The castle</title>
+</head>
+<body>
+	<main class="cd-main-content">
+		<h1>The Castle</h1>
+		<div class="question">
+		<div>You pass the door of the castle and realize that there is no soul. It is desert. What is the first thing you see?</div>
+		<br>
+		<form id ="calForm" method="post">
+		<input type="radio" name="one" value="a">A huge library, wall to wall full of books<br>
+		<input type="radio" name="one" value="b">A huge fireplace and a hot fire burning<br>
+		<input type="radio" name="one" value="c">A large banquet hall with huge chandeliers and red carpets<br>
+        <input type="radio" name="one" value="d">A long corridor with many closed doors<br>
+        <br>
+		<br>
+		<br>
+		<div id="button"><input type="submit" name="submit" class="cd-btn js-cd-panel-trigger" data-panel="main"></div>
+		<br>
+		<div id="button2"><a class="cd-btn" id="next" href="https://fall-2019.cs.utexas.edu/cs329e-mitra/bioinfanatics/castle/q3.html">Next</a></div>
+		</form>
+		</div>
+
+	</main>
+
+	<div class="cd-panel cd-panel--from-right js-cd-panel-main">
+		<header class="cd-panel__header">
+			<h1>What it tells you</h1>
+			<a href="#0" class="cd-panel__close js-cd-close">Close</a>
+		</header>
+
+		<div class="cd-panel__container">
+			<div class="cd-panel__content">
+				<p id="interp">Choose an anser</p>
+			</div> <!-- cd-panel__content -->
+		</div> <!-- cd-panel__container -->
+	</div> <!-- cd-panel -->
+	<script src="./main.js"></script> <!-- Resource JavaScript -->
+	<script type = "text/javascript">
+	document.getElementById("calForm").submit.onclick = answer;
+	function answer(){
+		let a1=document.getElementById("calForm")
+		if(a1[0].checked){
+            document.getElementById("interp").innerHTML="The space inside the castle is the idea that you believe others to have of you. You saw a library, you probably think that you are the person who supports others and helps them find answers to their problems.";
+        }
+        else if (a1[1].checked){
+			document.getElementById("interp").innerHTML="The space inside the castle is the idea that you believe others to have of you. The large fireplace gives a feeling of warmth and passion that you think you cause in people.";
+        }
+        else if(a1[2].checked){
+			document.getElementById("interp").innerHTML="The space inside the castle is the idea that you believe others to have of you. A fancy ballroom suggests that you feel that you can dazzle people around you and that you have a lot to give.";
+        }
+        else if(a1[3].checked){
+            document.getElementById("interp").innerHTML="The space inside the castle is the idea that you believe others to have of you. A long corridor with closed doors, you feel that you are difficult to understand and others will have to try much to ‘penetrate’ more within you.";
+        }
+	}
+	</script>
+</body>
+</html>

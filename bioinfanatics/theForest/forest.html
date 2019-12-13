@@ -1,0 +1,136 @@
+<html id="theForestBody">
+<head>
+	<title>The Forest Assessment</title>
+	<link rel="stylesheet" title="basic style" type="text/css"
+                href="./forest.css" media="all" /> 
+</head>
+<body>
+    <div id="navbar_theForest" class="navbar">
+                        <a class="regLink" href="../home.php">Home</a>
+                        <a class="regLink" href="../aboutPage.html">About</a>
+                        <div class="dropdown">
+                                <button class="dropbtn">Theme
+                                        <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                        <a href="#">Castle</a>
+                                        <a href="./theForest/forest.html">Forest</a>
+                                </div>
+                        </div>
+                        <a class="regLink" href="#news">Contact</a></div>
+	<span id="forest_h1">THE FOREST</span>
+	<form name="ptest" action="forest.php" method="POST" id="quiz">
+		<div id ="test-questions">
+        <span class="mainbody"> 
+        <div class= "question">
+        1. You are walking in the woods. Who are you with?<br>
+        <input type="text" name="q1" size="40" class="fwrd">
+        <br>
+        <br>
+        </div>
+        <div class="question">
+        2. You are walking in the woods. You see an animal. What kind of animal 
+        is it?<br>
+        <input type="text" name="q2" size="40" class="fwrd">
+        <br>
+        <br>
+        </div>
+        <div class="question">
+        3. What interaction takes place between you and the animal?<br>
+        <input type="text" name="q3" size="40" class="fwrd">
+        <br>
+        <br>
+        </div>
+        <div class="question">
+        4. You walk deeper into the woods. You enter a clearing and before you 
+        is your dream house. Describe its size.<br>
+        <input type="text" name="q4" size="40" class="fwrd">
+        <br>
+        <br>
+        </div>
+        <div class="question">
+        5. Is your dream house surrounded by a fence?<br>
+        <input type="radio" name="q5" value="yes" id="y" class="fwrd"/><label for="y">Yes</label>
+        <br> 
+        <input type="radio" name="q5" value="no" id="n" class="fwrd"><label for="n">No</label>
+        <br>
+        <br>
+        </div>
+        <div class="question">
+        6. You enter the house. You walk to the dining area and see the dining 
+        room table. Describe what you see on and around the table.<br>
+        <input type="text" name="q6" size="40" class="fwrd">
+        <br>
+        <br>
+        </div>
+        <div class="question">
+        7. You exit the house through the back door. Lying in the grass is a cup. 
+        What material is the cup made of (ceramic, glass, paper, etc.)?<br>
+        <input type="text" name="q7" size="40" class="fwrd">
+        <br>
+        <br>
+        </div>
+        <div class="question">
+        8. What do you do with the cup?<br>
+        <input type="text" name="q8" size="40" class="fwrd">
+        <br>
+        <br>
+        </div>
+        <div class="question">
+        9. You walk to the edge of the property, where you find yourself standing 
+        at the edge of a body of water. What type of body of water is it (creek, 
+        river, ocean, etc.)?<br>
+        <input type="text" name="q9" size="40" class="fwrd">
+        <br>
+        <br>
+        </div>
+        <div class="question">
+        10. How will you cross the water?<br>
+        <input type="text" name="q10" size="40" class="fwrd">
+        <br>
+        <br>
+        </div>
+        <input type="submit" value="Analyze" name="submit" id="submit">
+        <input type="reset" name="Reset" value="Reset" id="reset">
+        <script language="JavaScript">
+		document.ptest.q1.focus()
+	    </script>
+        </span>
+        </div>
+      </form>
+      <div class="forest_footer">
+                        <table>
+                                <tr>
+                                        <th><img class="photo" src="http://m.imeitou.com/uploads/allimg/2019051311/1om1yvumecq.jpg" alt="Avatar"></th>
+                                        <th id="line1">Get to Know Us</th>
+                                        <th><img class="photo" src="https://n.sinaimg.cn/sinacn20190515s/560/w1080h1080/20190515/485b-hwzkfpu2779553.jpg" alt="Avatar"></th>
+                                </tr>
+                                <tr>
+                                        <th>Yangbing Fang</th>
+                                        <th id="line2">We are UT students who are interested in psychology</th>
+                                        <th>Alexandra Smith</th>
+                                </tr>
+                                <tr>
+                                        <th>yanbingfang@utexas.edu</th>
+                                        <th></th>
+                                        <th>alexsmith9672@utexas.edu</th>
+                                </tr>
+                        </table>
+        </div>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+    <script>
+           (function($) {
+              var timeout= null;
+              var $mt = 0;
+              $("#quiz .fwrd").change(function(){
+                clearTimeout(timeout);
+                timeout = setTimeout(function(){ 
+                    $mt = $mt - 500;
+                    $("#test-questions").css("scrollTop", $mt); 
+                }, 333);
+              });
+           }(jQuery))
+    </script>
+   </body>
+   </html>

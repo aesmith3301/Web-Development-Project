@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="./reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="./demo.css"> <!-- Demo style -->
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+main{ 
+	position: absolute;
+	height:100%;
+	width:100%;
+    background: url("https://cdna.artstation.com/p/assets/images/images/003/395/000/large/guilherme-henrique-courtyard-smaller.jpg?1473249937") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    color:white;
+  }
+
+.question{
+	font-size:28px;
+	color:white;
+}
+#button{
+	padding-left:15em;
+}
+#button2{
+	padding-left:15em;
+}
+#next{
+	font-size:14px;
+}
+</style>
+<link rel="stylesheet" href="./style.css"> <!-- Resource style -->
+	
+	<title>The castle</title>
+</head>
+<body>
+	<main class="cd-main-content">
+		<h1>The Castle</h1>
+		<div class="question">
+		<div>You go down the stairs and you’re back in the area where you were when you first entered the castle. You go ahead and find a door at the rear of the building. You open it and go out in a yard. What exactly does it look like?</div>
+		<br>
+		<form id ="calForm" method="post">
+		<input type="radio" name="one" value="a">It is full of hypertrophic plants, grasses, broken wood and fallen barbed wire<br>
+		<input type="radio" name="one" value="b">It is impeccably maintained with countless colorful flowers<br>
+		<input type="radio" name="one" value="c">It’s a little jungle, but you can imagine how beautiful it would be if someone cleaned and put it in order<br>
+        <br>
+		<br>
+		<br>
+		<div id="button"><input type="submit" name="submit" class="cd-btn js-cd-panel-trigger" data-panel="main"></div>
+		<br>
+		<div id="button2"><a class="cd-btn" id="next" href="https://fall-2019.cs.utexas.edu/cs329e-mitra/bioinfanatics/home.php">Back to home page</a></div>
+		</form>
+		</div>
+
+	</main>
+
+	<div class="cd-panel cd-panel--from-right js-cd-panel-main">
+		<header class="cd-panel__header">
+			<h1>What it tells you</h1>
+			<a href="#0" class="cd-panel__close js-cd-close">Close</a>
+		</header>
+
+		<div class="cd-panel__container">
+			<div class="cd-panel__content">
+				<p id="interp">Choose an anser</p>
+			</div> <!-- cd-panel__content -->
+		</div> <!-- cd-panel__container -->
+	</div> <!-- cd-panel -->
+	<script src="./main.js"></script> <!-- Resource JavaScript -->
+	<script type = "text/javascript">
+	document.getElementById("calForm").submit.onclick = answer;
+	function answer(){
+		let a1=document.getElementById("calForm")
+		if(a1[0].checked){
+            document.getElementById("interp").innerHTML="The image of the courtyard is the image that you have in mind of your future! You chose the grassy, damaged garden then you are probably pessimistic that do not have a nice picture of the future.";
+        }
+        else if (a1[1].checked){
+			document.getElementById("interp").innerHTML="The image of the courtyard is the image that you have in mind of your future! So if your garden is neat and shiny, then you feel that your future will be heavenly.";
+        }
+        else if(a1[2].checked){
+			document.getElementById("interp").innerHTML="The image of the courtyard is the image that you have in mind of your future! A picture of a promising but neglected garden shows an optimistic person, who is worried if he can find the energy to take control of his life and make his future more beautiful.";
+        }
+	}
+	</script>
+</body>
+</html>

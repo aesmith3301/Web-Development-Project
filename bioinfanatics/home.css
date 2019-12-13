@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+html { 
+    background: url("picture9.jpeg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+  }
+body{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+#h11{
+    font-family: 'Yeon Sung', cursive;
+    font-size:97px;
+    position:absolute;
+    left:600px;
+    top:195px;
+}
+#h12{
+    font-family: 'Yeon Sung', cursive;
+    font-size:97px;
+    position:absolute;
+    left:600px;
+    top:275px;
+
+}
+
+
+
+#header1 {
+    font-family: 'Yeon Sung', cursive;
+    position: absolute;
+    font-size: 20px;
+    left:500px;
+    top:390px;
+    font-size:30px;
+}
+#header2 {
+    font-family: 'Yeon Sung', cursive;
+    position: absolute;
+    font-size: 20px;
+    left:500px;
+    top:420px;
+    font-size:30px;
+}
+
+#logo1 {
+    position:absolute;
+    left:770px;
+    top:190px;
+}
+#logo2 {
+    position:absolute;
+    left:770px;
+    top:190px;
+    animation:10s rotateRight infinite linear; 
+}
+@keyframes rotateRight{
+    100%{ transform:rotate(360deg); }
+}
+
+#triangle {
+    position:absolute;
+    left:600px;
+    top:250px;
+}
+
+.frwd {
+    position:absolute;
+    left:200px;
+    top:700px;
+}
+
+.introduction {
+    position:absolute;
+    left:200px;
+    top:700px;
+}
+
+.transbox {
+    width:950px;
+    margin: 20px;
+    background-color: #ffffff;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+  }
+.transbox p {
+    margin: 20px;
+    padding:30px;
+    font-family: 'Yeon Sung', cursive;
+    font-size:30px;
+}
+
+.Castle {
+    background: url("Picture1.png"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width:400px;
+    height: 300px;
+    position:absolute;
+    left:220px;
+    top:1150px;
+}
+.Castle:hover {
+    opacity: 0.6;
+    filter:alpha (opacity=60);
+}
+
+.para1{
+    position:absolute;
+    left:620px;
+    background-color: #ffffff;
+    opacity: 0.6;
+    filter: alpha(opacity=60); 
+    top:1150px;
+    width:535px;
+}
+
+.para1 p {
+    margin: 30px;
+    padding:30px;
+    font-size:25px;
+    height:180px;
+}
+
+#start1 {
+    color:white;
+    font-size:25px;
+    padding-left:100px;
+    padding-top:100px;
+}
+
+#start2 {
+    color:white;
+    font-size:25px;
+    padding-left:100px;
+    padding-top:100px;
+}
+.Forest{
+    background: url("https://2.bp.blogspot.com/-7ctQGWyVPrQ/UbcjKxIe3nI/AAAAAAAAA9A/2o_I9WF7kng/s1600/Outdoor+Anime+Landscape+44.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width:400px;
+    height: 300px;
+    position:absolute;
+    left:755px;
+    top:1485px;
+}
+.Forest:hover {
+    opacity: 0.6;
+    filter:alpha (opacity=60);
+}
+
+.para2{
+    position:absolute;
+    left:220px;
+    background-color: #ffffff;
+    opacity: 0.6;
+    filter: alpha(opacity=60); 
+    top:1485px;
+    width:535px;
+}
+
+.para2 p {
+    margin: 30px;
+    padding:30px;
+    padding-top: 40px;
+    font-size:25px;
+    height:170px;
+}
+
+.footer{
+    position:relative;
+    left: 0;
+    bottom: 0;
+    top:1880px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: black;
+  }
+
+table{
+    padding-top:20px;
+    width: 100%;
+ } 
+ 
+.photo {
+    width:120px;
+     border-radius: 50%;
+ }
+
+#line1{
+    padding:0px;
+    font-size:30px;
+}
+/* Navigation //////////////////////////*/
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: pink;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .container {
+    position: absolute;
+    top:500px;
+    left:700px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+  
+  .chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+  
+  .chevron:before,
+  .chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+  }
+  
+  .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+  
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+  
+  @keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+  
+  .text {
+    display: block;
+    margin-top: 75px;
+    margin-left: -30px;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: .25;
+    animation: pulse 2s linear alternate infinite;
+  }
+  
+  @keyframes pulse {
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  .container2 {
+    position: absolute;
+    top:1800px;
+    left:50%;
+    width: 24px;
+    height: 24px;
+  }
+
+/*The Forest Quiz*/
+
+  #theForestBody{
+    background: url("forestScene.jpg") no-repeat center center fixed; 
+    background-opacity: 0.2;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+  }
+
+#quiz{
+  display: block;
+    margin-top: 250px;
+    padding-top: 100px;
+    margin-left: 200px;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 20px;
+    white-space: nowrap;
+    background: rgba(7, 7, 7, 0.5);
+    width: 85%;
+}
+
+.question{
+  display: block;
+
+    margin-top: 75px;
+    padding-bottom: 100px;
+    margin-left: 100px;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 20px;
+    color: #fff;
+    opacity: 1;
+    /*white-space: nowrap;*/
+    width: 75%;
+}
+
+#forest_h1{
+  font-family: 'Yeon Sung', cursive;
+    font-size:120px;
+    background: rgba(256, 256, 256, 0.1);
+    position:absolute;
+    border-radius: 30px;
+    left:35%;
+    top:0%;
+}
+
+input[type="text"], input[type="radio"], label{
+  position: relative;
+  left: 0;
+  top: 10px;
+}
+
+input[type="submit"], input[type="reset"]{
+  position: relative;
+  left: 40%;
+  bottom: 5%;
+  background: white;
+  font-family: 'Yeon Sung', cursive;
+  font-size: 20pt;
+}
+
+.forest_footer, .forest_footer table{
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: black;
+  }
+
+  .insidePage{
+  background: url("insidePage.jpeg")
+}
+
+
+
+

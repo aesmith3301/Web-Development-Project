@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="./reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="./demo.css"> <!-- Demo style -->
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+main{ 
+	position: absolute;
+	height:100%;
+	width:100%;
+    background: url("https://cdna.artstation.com/p/assets/images/images/008/640/030/large/b-o-w-qin-n.jpg?1514177884") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    color:white;
+  }
+
+.question{
+	font-size:28px;
+	color:white;
+}
+#button{
+	padding-left:15em;
+}
+#button2{
+	padding-left:15em;
+}
+#next{
+	font-size:14px;
+}
+</style>
+<link rel="stylesheet" href="./style.css"> <!-- Resource style -->
+	
+	<title>The castle</title>
+</head>
+<body>
+	<main class="cd-main-content">
+		<h1>The Castle</h1>
+		<div class="question">
+		<div>You pass the door of the castle and realize that there is no soul. It is desert. What is the first thing you see?</div>
+		<br>
+		<form id ="calForm" method="post">
+		<input type="radio" name="one" value="a">It is a normal window<br>
+		<input type="radio" name="one" value="b">It’s too small, almost skylight<br>
+		<input type="radio" name="one" value="c">The window is huge, so that it takes almost the entire surface of the wall<br>
+        <br>
+		<br>
+		<br>
+		<div id="button"><input type="submit" name="submit" class="cd-btn js-cd-panel-trigger" data-panel="main"></div>
+		<br>
+		<div id="button2"><a class="cd-btn" id="next" href="https://fall-2019.cs.utexas.edu/cs329e-mitra/bioinfanatics/castle/q4.html">Next</a></div>
+		</form>
+		</div>
+
+	</main>
+
+	<div class="cd-panel cd-panel--from-right js-cd-panel-main">
+		<header class="cd-panel__header">
+			<h1>What it tells you</h1>
+			<a href="#0" class="cd-panel__close js-cd-close">Close</a>
+		</header>
+
+		<div class="cd-panel__container">
+			<div class="cd-panel__content">
+				<p id="interp">Choose an anser</p>
+			</div> <!-- cd-panel__content -->
+		</div> <!-- cd-panel__container -->
+	</div> <!-- cd-panel -->
+	<script src="./main.js"></script> <!-- Resource JavaScript -->
+	<script type = "text/javascript">
+	document.getElementById("calForm").submit.onclick = answer;
+	function answer(){
+		let a1=document.getElementById("calForm")
+		if(a1[1].checked){
+            document.getElementById("interp").innerHTML="The window is the way you feel right now. A small window means that you feel depressed and trapped in your life. It may feel like there’s no way out of what you are experiencing in this period.";
+        }
+        else if (a1[0].checked){
+            document.getElementById("interp").innerHTML="The window is the way you feel right now. A normal window shows a person with realistic demands and expectations of life at this stage. You realize that there are limitations, but the future is here and it looks clear for you.";
+        }
+        else if(a1[2].checked){
+			document.getElementById("interp").innerHTML="The window is the way you feel right now. The window is gigantic, you probably feel invincible, free and able to achieve what you want.";
+        }
+	}
+	</script>
+</body>
+</html>
